@@ -1,0 +1,138 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-shadow: 0 0 100px  white inset;
+    background: url('../IMAGE/login1.jpg') no-repeat center/cover;
+    animation: box 2s linear infinite
+}
+@keyframes box {
+   50%{
+    box-shadow: 0 0 120px #77b7e470 inset
+   }
+   0% , 100%{
+    box-shadow: 0 0 100px #77b7e470 inset
+
+   }
+}
+.login_box{
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+}
+.login_header{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+.login_header header{
+    color:#77b6e4;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    animation: head 3s infinite 2s linear;
+}
+@keyframes head {
+    50%{
+        letter-spacing: 8px;
+    }
+}
+.input_box .input-field{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    border-left: 8px solid #77b6e4;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0, 1);
+    outline: none;
+    transform: .3s;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    transition: all .3s;
+    cursor: pointer;
+
+}
+::placeholder{
+    font-weight: 200;
+    text-transform: capitalize;
+    color: #fff;
+}
+.input-field:focus{
+    transform: scale(1.1);
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+section{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #e9a3a3;
+}
+#check{
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section a{
+    color: #e9a3a3;
+}
+.input-submit{
+    position: relative;
+}
+.submit-btn{
+    width: 100%;
+    height: 60px;
+    background: #77b6e4;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.input-submit label{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #030303;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: capitalize;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background: #7c8ba6;
+    transform: scale(1.05,1);
+}
+.log-up-link{
+    text-align:center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #77b6e4;
+
+}
+.log-up-link a{
+    color:#e9a3a3;
+    font-weight: 600;
+}
