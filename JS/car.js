@@ -26,7 +26,7 @@ right.onclick = () => {
 left.onclick = () => {
     
     if (x == 1) {
-        x = localStorage.n +1;
+        x = localStorage.n;
     }
     x-- ; 
     img.src = `../IMAGE/${localStorage.f}/${localStorage.i}/${x}.jpg`;
