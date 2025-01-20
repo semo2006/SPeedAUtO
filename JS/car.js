@@ -17,20 +17,30 @@ else{
 x = 1 ;
 img.src= `../IMAGE/${localStorage.f}/${localStorage.i}/1.jpg`
 right.onclick = () => {
-     
-    if (x >= localStorage.n ) {
+    
+    if (x >= localStorage.n) {
         x = 1;
+        img.src = `../IMAGE/${localStorage.f}/${localStorage.i}/${x}.jpg`;
+
     }
-    x++ ;
+    else{
+        x++ ; 
     img.src = `../IMAGE/${localStorage.f}/${localStorage.i}/${x}.jpg`;
-}
+
+    }
+    }
 left.onclick = () => {
     
     if (x == 1) {
         x = localStorage.n;
+        img.src = `../IMAGE/${localStorage.f}/${localStorage.i}/${x}.jpg`;
+
     }
-    x-- ; 
+    else{
+           x-- ; 
     img.src = `../IMAGE/${localStorage.f}/${localStorage.i}/${x}.jpg`;
-}
+
+    }
+ }
 
 p.innerHTML = text;
