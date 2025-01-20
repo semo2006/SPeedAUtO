@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../IMAGE/mrc.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedAuto</title>
+</head>
+<body>
+    <header>
+        <img src="../IMAGE/Germany.jpg" alt="">
+        <div class="detail">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+        <div class="about">
+            <a href="login.html">Log in</a>
+            <a href="signup.html">Sign up</a>
+            <a href="info.html">Information</a>
+        </div>
+    </header>
+    <h1>MADE IN GERMANY</h1>
+    <aside>
+        <a id="mrc" href="mrc.html" style="background-image: url('../IMAGE/mrc.jpg'); background-size: 80%;" class="box"></a>
+        <a id="bmw" href="bmw.html" style="background-image: url('../IMAGE/bmw.jpg'); background-size: 50%;" class="box"></a>
+        <a id="audi" href="audi.html" style="background-image: url('../IMAGE/audi.jpg'); background-size: 60%;" class="box"></a>
+        <a id="vlks" href="vlks.html" style="background-image: url('../IMAGE/vlks.png'); background-size: 80%;" class="box"></a>
+    </aside>
+    <script src="../JS/script.js"></script>
+    <script>
+        let a = document.querySelectorAll("aside a");
+        let b = ["mrc","bmw","audi","vlks"]
+        let n = [12,6,6,6]
+        for (let i = 0; i < a.length; i++) {
+            a[i].onclick = () => {
+                localStorage.f = b[i] ;
+                localStorage.t = i ;
+                localStorage.n = n[i];
+            }
+            
+        }
+    </script>
+</body>
+</html>
