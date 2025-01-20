@@ -17,10 +17,11 @@ else{
 x = 1 ;
 img.src= `../IMAGE/${localStorage.f}/${localStorage.i}/1.jpg`
 right.onclick = () => {
-    x++ ; 
-    if (x >= localStorage.n +1) {
+     
+    if (x >= localStorage.n ) {
         x = 1;
     }
+    x++ ;
     img.src = `../IMAGE/${localStorage.f}/${localStorage.i}/${x}.jpg`;
 }
 left.onclick = () => {
